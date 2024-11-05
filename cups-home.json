@@ -1,0 +1,32 @@
+[
+  {
+    "name": "World Cup",
+    "identity_url": "world-cup",
+    "icon": "https://www.fifplay.com/img/public/fifa-world-cup-2026-logo.png"
+  },
+  {
+    "name": "W. World Cup",
+    "identity_url": "womens-world-cup",
+    "icon": "https://b.fssta.com/uploads/application/soccer/competition-logos/FIFAWomensWorldCup-2023-Alternate.vresize.160.160.medium.0.png"
+  },
+  {
+    "name": "Euro 2024",
+    "identity_url": "euro-2024",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/UEFA_Euro_2024_Logo.svg/800px-UEFA_Euro_2024_Logo.svg.png"
+  },
+  {
+    "name": "W. E. Championship",
+    "identity_url": "womens-european-championships",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/1/18/UEFA_Women%27s_Champions_League_logo_%282021%29.svg/400px-UEFA_Women%27s_Champions_League_logo_%282021%29.svg.png"
+  },
+  {
+    "name": "UEFA N. League",
+    "identity_url": "under-21s",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/9/92/UEFA_European_Under-21_Championship_logo.svg/420px-UEFA_European_Under-21_Championship_logo.svg.png?20191213211405"
+  },
+  {
+    "name": "MLS",
+    "identity_url": "mls",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/MLS_crest_logo_RGB_gradient.svg/440px-MLS_crest_logo_RGB_gradient.svg.png"
+  }
+]

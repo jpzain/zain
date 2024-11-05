@@ -1,0 +1,1234 @@
+[UID:1725][3466838] Child process with pid: 3466844 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/demosomi/public_html/xscore/app.py", line 4, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import app as application
+  File "/home/demosomi/public_html/xscore/app.py", line 4, in <module>
+    from selenium import webdriver
+ModuleNotFoundError: No module named 'selenium'
+[UID:1725][3476036] Child process with pid: 3476052 was killed by signal: 15, core dump: 0
+[2024-09-18 08:01:26,669] ERROR in app: Exception on /api/scores [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 57, in get_scores
+    data = scrape_uefa_scores()  # Using BeautifulSoup
+NameError: name 'scrape_uefa_scores' is not defined
+[2024-09-18 08:01:28,115] ERROR in app: Exception on /api/scores [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 57, in get_scores
+    data = scrape_uefa_scores()  # Using BeautifulSoup
+NameError: name 'scrape_uefa_scores' is not defined
+[2024-09-24 09:09:35,055] ERROR in app: Exception on /api/table [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 123, in get_table
+    table = scrape_table()
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in scrape_table
+    position = row.find('td', headers='th--0').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-09-24 09:15:59,812] ERROR in app: Exception on /api/table [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 123, in get_table
+    @app.route('/api/table', methods=['GET'])
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in scrape_table
+    # Each row in the table
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-09-24 09:16:02,728] ERROR in app: Exception on /api/table [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 125, in get_table
+    table = scrape_table()
+  File "/home/demosomi/public_html/xscore/app.py", line 76, in scrape_table
+    position = row.find('td', headers='th--0').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-09-24 09:16:04,064] ERROR in app: Exception on /api/table [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 125, in get_table
+    table = scrape_table()
+  File "/home/demosomi/public_html/xscore/app.py", line 76, in scrape_table
+    position = row.find('td', headers='th--0').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-09-24 09:16:05,608] ERROR in app: Exception on /api/table [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 125, in get_table
+    table = scrape_table()
+  File "/home/demosomi/public_html/xscore/app.py", line 76, in scrape_table
+    position = row.find('td', headers='th--0').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-09-26 13:31:14,256] ERROR in app: Exception on /api/laliga-table [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 111, in get_laliga_table
+    table = scrape_laliga_table()
+  File "/home/demosomi/public_html/xscore/app.py", line 67, in scrape_laliga_table
+    team = row.find('span', class_='sdc-site-table__name-target').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+OSError: LSAPI: Socket read/write error
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[ERROR] [UID:1725][2006830] wsgiAppHandler pApp->start_response() return NULL.
+TypeError: create_app() takes 0 positional arguments but 2 were given
+[UID:1725][2009709] Child process with pid: 2009739 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 106, in <module>
+    def get_fixtures():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 106, in <module>
+    def get_fixtures():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+[UID:1725][2016246] Child process with pid: 2016254 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 106, in <module>
+    def get_fixtures():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+[UID:1725][2016246] Child process with pid: 2016431 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 106, in <module>
+    def get_fixtures():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+[UID:1725][2016246] Child process with pid: 2016511 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 106, in <module>
+    def get_fixtures():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+[UID:1725][2016246] Child process with pid: 2016590 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 9, in create_app
+    def get_fixtures(league):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 9, in create_app
+    def get_fixtures(league):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+[UID:1725][2020478] Child process with pid: 2020489 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 9, in create_app
+    def get_fixtures(league):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+[UID:1725][2020478] Child process with pid: 2020508 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 9, in create_app
+    def get_fixtures(league):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1055, in add_url_rule
+    self.url_map.add(rule)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/map.py", line 177, in add
+    rule.bind(self)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 581, in bind
+    self.compile()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 726, in compile
+    self._parts.extend(self._parse_rule(rule))
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 632, in _parse_rule
+    convobj = self.get_converter(
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/werkzeug/routing/rules.py", line 595, in get_converter
+    raise LookupError(f"the converter {converter_name!r} does not exist")
+LookupError: the converter 'str' does not exist
+[UID:1725][2020478] Child process with pid: 2021962 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+ImportError: cannot import name 'create_app' from 'app' (/home/demosomi/public_html/xscore/app.py)
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+ImportError: cannot import name 'create_app' from 'app' (/home/demosomi/public_html/xscore/app.py)
+[UID:1725][4018218] Child process with pid: 4018229 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import app
+ImportError: cannot import name 'app' from 'app' (/home/demosomi/public_html/xscore/app.py)
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import app
+ImportError: cannot import name 'app' from 'app' (/home/demosomi/public_html/xscore/app.py)
+[UID:1725][4037487] Child process with pid: 4037499 was killed by signal: 15, core dump: 0
+[2024-09-28 10:04:12,587] ERROR in app: Exception on /api/match/real-valladolid-vs-real-mallorca/506372 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_stats
+    match_stats = scrape_match_stats(match_path)
+NameError: name 'scrape_match_stats' is not defined
+[2024-09-28 10:04:13,993] ERROR in app: Exception on /api/match/real-valladolid-vs-real-mallorca/506372 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_stats
+    match_stats = scrape_match_stats(match_path)
+NameError: name 'scrape_match_stats' is not defined
+[2024-09-28 10:07:22,246] ERROR in app: Exception on /api/match/real-valladolid-vs-real-mallorca/506372 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_stats
+    match_stats = scrape_match_stats(match_path)
+NameError: name 'scrape_match_stats' is not defined
+[2024-09-28 10:07:23,851] ERROR in app: Exception on /api/match/real-valladolid-vs-real-mallorca/506372 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_stats
+    match_stats = scrape_match_stats(match_path)
+NameError: name 'scrape_match_stats' is not defined
+[2024-09-28 10:07:25,016] ERROR in app: Exception on /api/match/real-valladolid-vs-real-mallorca/506372 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_stats
+    match_stats = scrape_match_stats(match_path)
+NameError: name 'scrape_match_stats' is not defined
+[2024-09-28 10:07:26,151] ERROR in app: Exception on /api/match/real-valladolid-vs-real-mallorca/506372 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_stats
+    match_stats = scrape_match_stats(match_path)
+NameError: name 'scrape_match_stats' is not defined
+[2024-09-28 10:07:35,936] ERROR in app: Exception on /api/match/real-valladolid-vs-real-mallorca/506372 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_stats
+    match_stats = scrape_match_stats(match_path)
+NameError: name 'scrape_match_stats' is not defined
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 103
+    return fixtures
+    ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 103
+    return fixtures
+    ^
+SyntaxError: invalid syntax
+[UID:1725][910176] Child process with pid: 910181 was killed by signal: 15, core dump: 0
+[2024-09-30 20:26:58,307] ERROR in app: Exception on /api/fixtures/serie-a [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 10, in get_fixtures
+    fixtures = scrape_fixtures(league)
+  File "/home/demosomi/public_html/xscore/app.py", line 100, in scrape_fixtures
+    time_bd = convert_to_bangladesh_time(time)
+  File "/home/demosomi/public_html/xscore/app.py", line 62, in convert_to_bangladesh_time
+    match_time = datetime.strptime(time_str, '%I:%M %p').time()
+NameError: name 'datetime' is not defined
+[2024-09-30 20:27:07,424] ERROR in app: Exception on /api/fixtures/serie-a [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 10, in get_fixtures
+    fixtures = scrape_fixtures(league)
+  File "/home/demosomi/public_html/xscore/app.py", line 100, in scrape_fixtures
+    time_bd = convert_to_bangladesh_time(time)
+  File "/home/demosomi/public_html/xscore/app.py", line 62, in convert_to_bangladesh_time
+    match_time = datetime.strptime(time_str, '%I:%M %p').time()
+NameError: name 'datetime' is not defined
+[2024-09-30 20:31:09,471] ERROR in app: Exception on /api/fixtures/serie-a [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 10, in get_fixtures
+    @app.route('/api/fixtures/<string:league>', methods=['GET'])
+  File "/home/demosomi/public_html/xscore/app.py", line 100, in scrape_fixtures
+  File "/home/demosomi/public_html/xscore/app.py", line 62, in convert_to_bangladesh_time
+    def convert_to_bangladesh_time(time_str):
+NameError: name 'datetime' is not defined
+[UID:1725][2620545] Child process with pid: 2620571 was killed by signal: 15, core dump: 0
+[UID:1725][1594076] Child process with pid: 1645831 was killed by signal: 15, core dump: 0
+[UID:1725][1594076] Child process with pid: 1647824 was killed by signal: 15, core dump: 0
+[UID:1725][1594076] Child process with pid: 1647926 was killed by signal: 15, core dump: 0
+OSError: LSAPI: Socket read/write error
+[2024-10-04 14:39:29,542] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 81, in get_match_players
+    'players': match_players
+NameError: name 'match_players' is not defined
+[2024-10-04 14:41:27,997] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 75, in get_match_players
+    match_players = scrape_match_players(match_path)
+NameError: name 'scrape_match_players' is not defined
+[2024-10-04 14:41:29,523] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 75, in get_match_players
+    match_players = scrape_match_players(match_path)
+NameError: name 'scrape_match_players' is not defined
+[2024-10-04 14:41:30,903] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 75, in get_match_players
+    match_players = scrape_match_players(match_path)
+NameError: name 'scrape_match_players' is not defined
+[2024-10-04 14:41:32,268] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 75, in get_match_players
+    match_players = scrape_match_players(match_path)
+NameError: name 'scrape_match_players' is not defined
+[2024-10-04 14:41:33,557] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 75, in get_match_players
+    match_players = scrape_match_players(match_path)
+NameError: name 'scrape_match_players' is not defined
+[2024-10-04 14:42:43,834] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 76, in get_match_players
+    if match_result:
+NameError: name 'match_result' is not defined
+[2024-10-04 14:42:45,425] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 76, in get_match_players
+    if match_result:
+NameError: name 'match_result' is not defined
+[2024-10-04 14:42:47,087] ERROR in app: Exception on /api/match-players/manchester-city-vs-arsenal/teams/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 76, in get_match_players
+    if match_result:
+NameError: name 'match_result' is not defined
+[UID:1725][4095590] Child process with pid: 4095602 was killed by signal: 15, core dump: 0
+[2024-10-06 09:14:57,030] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_details
+    match_stats = scrape_match_stats(match_path, match_id)
+TypeError: scrape_match_stats() takes 1 positional argument but 2 were given
+[2024-10-06 09:14:58,807] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_details
+    match_stats = scrape_match_stats(match_path, match_id)
+TypeError: scrape_match_stats() takes 1 positional argument but 2 were given
+[2024-10-06 09:14:59,886] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 43, in get_match_details
+    match_stats = scrape_match_stats(match_path, match_id)
+TypeError: scrape_match_stats() takes 1 positional argument but 2 were given
+[2024-10-06 09:16:21,627] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 44, in get_match_details
+    match_result = scrape_match_result(match_path, match_id)
+  File "/home/demosomi/public_html/xscore/app.py", line 246, in scrape_match_result
+    result['home_team'] = soup.find('span', class_='sdc-site-match-header__team-name--home').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-10-06 09:16:23,193] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 44, in get_match_details
+    match_result = scrape_match_result(match_path, match_id)
+  File "/home/demosomi/public_html/xscore/app.py", line 246, in scrape_match_result
+    result['home_team'] = soup.find('span', class_='sdc-site-match-header__team-name--home').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-10-06 09:16:24,524] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 44, in get_match_details
+    match_result = scrape_match_result(match_path, match_id)
+  File "/home/demosomi/public_html/xscore/app.py", line 246, in scrape_match_result
+    result['home_team'] = soup.find('span', class_='sdc-site-match-header__team-name--home').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-10-06 09:19:11,949] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 44, in get_match_details
+    match_result = scrape_match_result(match_path, match_id)
+  File "/home/demosomi/public_html/xscore/app.py", line 246, in scrape_match_result
+    result['home_team'] = soup.find('span', class_='sdc-site-match-header__team-name--home').text.strip()
+AttributeError: 'NoneType' object has no attribute 'text'
+[2024-10-06 09:20:13,764] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 48, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-06 09:20:15,472] ERROR in app: Exception on /api/match-details/manchester-city-vs-arsenal/505853 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 48, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-06 10:26:52,700] ERROR in app: Exception on /api/leagues [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 11, in get_leagues
+    data = json.load(json_file)
+NameError: name 'json' is not defined
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 2, in <module>
+    import request
+ModuleNotFoundError: No module named 'request'
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 1, in <module>
+    from app import create_app
+  File "/home/demosomi/public_html/xscore/app.py", line 2, in <module>
+    import request
+ModuleNotFoundError: No module named 'request'
+[UID:1725][977996] Child process with pid: 978010 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 22, in create_app
+    def get_leagues():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1059, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: get_leagues
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 22, in create_app
+    def get_leagues():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1059, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: get_leagues
+[UID:1725][101812] Child process with pid: 101818 was killed by signal: 15, core dump: 0
+[2024-10-08 08:12:18,720] ERROR in app: Exception on /api/leagues-all [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 23, in get_leagues_all
+    with open('leagues-all.json') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'leagues-all.json'
+[UID:1725][1038974] Child process with pid: 1038986 was killed by signal: 15, core dump: 0
+[2024-10-13 20:48:04,183] ERROR in app: Exception on /api/match-details/juventus-vs-cagliari/511962 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 20:55:40,246] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 20:55:49,799] ERROR in app: Exception on /api/match-details/alaves-vs-barcelona/506374 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 20:56:31,758] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 20:57:08,468] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 20:57:45,091] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 20:59:04,093] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 20:59:46,491] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 21:01:54,611] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 21:03:49,955] ERROR in app: Exception on /api/match-details/girona-vs-athletic-bilbao/506376 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 21:03:57,259] ERROR in app: Exception on /api/match-details/real-sociedad-vs-atletico-madrid/506380 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-13 23:46:15,023] ERROR in app: Exception on /api/match-details/juventus-vs-cagliari/511962 [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 74, in get_match_details
+    return jsonify({
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/__init__.py", line 170, in jsonify
+    return current_app.json.response(*args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 215, in response
+    f"{self.dumps(obj, **dump_args)}\n", mimetype=self.mimetype
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 180, in dumps
+    return json.dumps(obj, **kwargs)
+  File "/opt/alt/python38/lib64/python3.8/json/__init__.py", line 234, in dumps
+    return cls(
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/opt/alt/python38/lib64/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/json/provider.py", line 120, in _default
+    raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
+TypeError: Object of type Response is not JSON serializable
+[2024-10-15 15:13:46,704] ERROR in app: Exception on /api/data-home [GET]
+Traceback (most recent call last):
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/demosomi/public_html/xscore/app.py", line 13, in get_leagues_home
+    with open('cups-home.json') as json_file:
+FileNotFoundError: [Errno 2] No such file or directory: 'cups-home.json'
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 37, in create_app
+    def get_leagues_all():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1059, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: get_leagues_all
+Traceback (most recent call last):
+  File "/home/demosomi/public_html/xscore/passenger_wsgi.py", line 3, in <module>
+    application = create_app()
+  File "/home/demosomi/public_html/xscore/app.py", line 37, in create_app
+    def get_leagues_all():
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 435, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/scaffold.py", line 50, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/demosomi/virtualenv/public_html/xscore/3.8/lib/python3.8/site-packages/flask/app.py", line 1059, in add_url_rule
+    raise AssertionError(
+AssertionError: View function mapping is overwriting an existing endpoint function: get_leagues_all
+[UID:1725][1642760] Child process with pid: 1642771 was killed by signal: 15, core dump: 0

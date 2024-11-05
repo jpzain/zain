@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Premier League",
+    "identity_url": "premier-league",
+    "icon": "https://www.edigitalagency.com.au/wp-content/uploads/premier-league-icon-lion-png-large-size.png"
+  },
+  {
+    "name": "La Liga",
+    "identity_url": "la-liga",
+    "icon": "https://seeklogo.com/images/L/laliga-logo-389DC0DB9C-seeklogo.com.png"
+  },
+  {
+    "name": "Champions League",
+    "identity_url": "champions-league",
+    "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/UEFA_Champions_League.svg/1200px-UEFA_Champions_League.svg.png"
+  },
+  {
+    "name": "Bundesliga",
+    "identity_url": "bundesliga",
+    "icon": "https://seeklogo.com/images/B/bundesliga-logo-CA4C5CF312-seeklogo.com.png"
+  },
+  {
+    "name": "Serie A",
+    "identity_url": "serie-a",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Serie_A.png"
+  },
+  {
+    "name": "Ligue 1",
+    "identity_url": "ligue-1",
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Ligue_1_Uber_Eats_logo.svg/1200px-Ligue_1_Uber_Eats_logo.svg.png"
+  }
+]
